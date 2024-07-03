@@ -1,0 +1,50 @@
+.border-1 {
+  border: 2px solid red;
+}
+.border-2 {
+  border: 2px solid rgb(196, 2, 231);
+}
+.border-3 {
+  border: 2px solid rgb(25, 236, 2);
+}
+.border-4 {
+  border: 2px solid rgb(6, 78, 235);
+}
+.border-5 {
+  border: 2px solid rgb(239, 240, 243);
+}
+.boxshadow {
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+.border-left {
+  border-right: 1px solid #dddd;
+}
+.slider-container {
+  width: 50px;
+  height: 25px;
+  background-color: #ccc;
+  border-radius: 25px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.slider-container.active {
+  background-color: #4caf50;
+}
+
+.slider {
+  width: 23px;
+  height: 23px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  transition: left 0.3s;
+}
+
+.slider-container.active .slider {
+  left: 26px;
+}
